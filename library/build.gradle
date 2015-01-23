@@ -20,7 +20,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "org.pybee:cassowary:1.0.0-SNAPSHOT"
+    compile project(':cassowary-java')
+    //compile "org.pybee:cassowary:1.0.0-SNAPSHOT"
 }
 
 uploadArchives {

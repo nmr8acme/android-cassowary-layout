@@ -14,7 +14,20 @@ You can reach me on twitter as [@alexbirkett](https://twitter.com/alexbirkett).
 ## Dependencies
 
 ###Cassowary
-This project currenly depends on [my cassowary fork](https://github.com/alexbirkett/cassowary-java-1).
+This project currently depends on [my cassowary fork](https://github.com/alexbirkett/cassowary-java-1).
+
+###Using as a Gradle dependency
+
+    git submodule add $URL_TO_REPO_FOR_ANDROID_CASSOWARY_LAYOUT android-cassowary-layout
+    git submodule add $URL_TO_REPO_FOR_CASSOWARY_JAVA cassowary-java
+
+In the root of your Gradle project in `settings.gradle` add:
+
+    include ':android-cassowary-layout:library', 'cassowary-java'
+
+In your project's `build.gradle` add:
+
+    compile project(':android-cassowary-layout:library')
 
 #Examples
 
